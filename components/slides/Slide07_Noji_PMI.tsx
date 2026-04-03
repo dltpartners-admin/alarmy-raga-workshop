@@ -4,10 +4,10 @@ import { useSlideGsap } from '@/hooks/useSlideGsap';
 
 const items = [
   { num: 1, title: '개발 및 실험환경 구축', desc: 'A/A 테스트, 배포, 실험 파이프라인' },
-  { num: 2, title: 'EKS 인프라 마이그레이션', desc: '전 레포 ECR CI/CD 워크플로우 추가' },
-  { num: 3, title: '유저 이해도 제고', desc: '유저 인터뷰 12명, CS 매니저 인터뷰' },
+  { num: 2, title: 'EKS 인프라 마이그레이션 (WIP)', desc: '전 레포 ECR CI/CD 워크플로우 추가' },
+  { num: 3, title: '유저 이해도 제고', desc: '유저 인터뷰 12명, CS 매니저 인터뷰, 창업자 3명 인터뷰' },
   { num: 4, title: '권한/계정/계약 정리', desc: 'Amplitude, Stripe, 2FA 이관' },
-  { num: 5, title: '앱 이관', desc: 'Anki Pro 잔여 제거, noji.io 이전' },
+  { num: 5, title: '앱 이관 (WIP)', desc: 'Anki Pro 잔여 제거, noji.io 이전' },
 ];
 
 export default function Slide07_Noji_PMI({ isActive }: { isActive: boolean }) {

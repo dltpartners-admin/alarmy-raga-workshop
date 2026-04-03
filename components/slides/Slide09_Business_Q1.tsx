@@ -5,7 +5,7 @@ import { useSlideGsap } from '@/hooks/useSlideGsap';
 const channelRows = [
   { label: '브로커', from: '1개', to: '3개' },
   { label: '플랫폼', from: '-', to: '2개' },
-  { label: 'IB', from: '-', to: '2개' },
+  { label: 'IB', from: '-', to: '4개' },
 ];
 
 const stages = [
