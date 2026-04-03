@@ -10,9 +10,9 @@ const iconMap: Record<string, string> = {
 
 const rows = [
   { product: '노지', rev25: '55.5억', profit25: '36.7억', rev26: '55.5억', profit26: '44.64억' },
-  { product: '비트윈', rev25: '13.2억', profit25: '2.9억', rev26: '14.3억', profit26: '5억' },
-  { product: '플릭', rev25: '2.5억', profit25: '1.6억', rev26: '3.4억', profit26: '2.86억' },
-  { product: '신규 인수', rev25: '-', profit25: '-', rev26: '26.8억', profit26: '20억' },
+  { product: '비트윈', rev25: '13.2억', profit25: '2.9억', rev26: '12억', profit26: '5억' },
+  { product: '플릭', rev25: '2.5억', profit25: '1.6억', rev26: '3.3억', profit26: '2.86억' },
+  { product: '신규 인수', rev25: '-', profit25: '-', rev26: '29.2억', profit26: '20억' },
 ];
 
 const totalRow = { product: '총합', rev25: '71.2억', profit25: '41.2억', rev26: '100억', profit26: '72.5억' };

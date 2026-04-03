@@ -17,7 +17,7 @@ const summaryRows = [
 const annualRows = [
   { label: '노지', q1: '13.8억', q2: '17억', q3: '23억', q4: '31억', total: '84.8억' },
   { label: '비트윈+플릭', q1: '3.9억', q2: '3.8억', q3: '3.8억', q4: '3.8억', total: '15.3억' },
-  { label: '소계', q1: '17.7억', q2: '20.8억', q3: '26.8억', q4: '34.8억', total: '100.1억', bold: true },
+  { label: '소계', q1: '17.7억', q2: '20.8억', q3: '26.8억', q4: '34.7억', total: '100억', bold: true },
   { label: '신규 딜', q1: '-', q2: '?', q3: '?', q4: '?', total: '+a억', muted: true },
 ];
 
