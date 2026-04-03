@@ -8,7 +8,7 @@ const rows = [
   { product: '플릭', revTarget: 0.8, revActual: 0.8, profitTarget: 0.6, profitActual: 0.633 },
 ];
 
-const totalRow = { product: '전체', revTarget: 18, revActual: 17.7 };
+const totalRow = { product: '전체', revTarget: 18, revActual: 17.7, profitTarget: 11, profitActual: 11.85 };
 
 function fmt(v: number) {
   return `${v}억`;
@@ -63,8 +63,10 @@ export default function Slide05_Q1Revenue({ isActive }: { isActive: boolean }) {
                 <td className={`pt-3 text-right font-bold text-lg ${totalRow.revActual >= totalRow.revTarget ? 'text-primary' : 'text-dh-gray-mid'}`}>
                   {fmt(totalRow.revActual)}
                 </td>
-                <td className="pt-3 text-right" />
-                <td className="pt-3 text-right" />
+                <td className="pt-3 text-right text-white font-bold text-lg">{fmt(totalRow.profitTarget)}</td>
+                <td className={`pt-3 text-right font-bold text-lg ${totalRow.profitActual >= totalRow.profitTarget ? 'text-primary' : 'text-dh-gray-mid'}`}>
+                  {fmt(totalRow.profitActual)}
+                </td>
               </tr>
             </tbody>
           </table>
