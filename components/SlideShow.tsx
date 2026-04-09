@@ -33,11 +33,25 @@ export default function SlideShow({ current, direction, children, onNavigate }: 
 
   useEffect(() => {
     let lastWheel = 0;
+    let wheelCooldown = false;
     const handleWheel = (e: WheelEvent) => {
       e.preventDefault();
       const now = Date.now();
-      if (now - lastWheel < 300) return;
+      // Ignore small residual wheel events (trackpad momentum)
+      if (Math.abs(e.deltaY) < 4) return;
+      // Hard cooldown after a successful navigation
+      if (wheelCooldown) {
+        lastWheel = now;
+        return;
+      }
+      // Require a quiet period to reset (helps with trackpad momentum)
+      if (now - lastWheel < 900) {
+        lastWheel = now;
+        return;
+      }
       lastWheel = now;
+      wheelCooldown = true;
+      setTimeout(() => { wheelCooldown = false; }, 900);
       if (e.deltaY > 0) goTo(currentRef.current + 1);
       else if (e.deltaY < 0) goTo(currentRef.current - 1);
     };

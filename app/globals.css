@@ -1,12 +1,25 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #FE000D;
-  --color-dh-black: #18181B;
-  --color-dh-card: #27272A;
-  --color-dh-gray-light: #F4F4F5;
-  --color-dh-gray-mid: #71717A;
-  --color-dh-border: #E4E4E7;
+  /* Brand — Alarmy red (primary), DARO blue (secondary) */
+  --color-alarmy: #FF2D45;
+  --color-alarmy-soft: #FF6B7D;
+  --color-daro: #4B4EFC;
+  --color-daro-soft: #8A8DFF;
+
+  /* Legacy aliases kept for compatibility with old class names */
+  --color-primary: #FF2D45;
+  --color-accent: #4B4EFC;
+
+  /* Surfaces — strict black/white only */
+  --color-dh-black: #000000;
+  --color-dh-card: #0B0B0B;
+  --color-dh-gray-light: #F5F5F5;
+  --color-dh-gray-mid: #8A8A92;
+  --color-dh-gray-dim: #55555C;
+  --color-dh-border: #18181C;
+  --color-white: #FFFFFF;
+
   --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -21,7 +34,6 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Grain texture overlay */
 .grain::after {
   content: '';
   position: absolute;
@@ -32,11 +44,5 @@ html, body {
   z-index: 1;
 }
 
-/* Scrollbar hide */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
