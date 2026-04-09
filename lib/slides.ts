@@ -14,8 +14,7 @@ export const slides: SlideMeta[] = [
   { id: 6,  title: 'UX Fear',            section: 'intro',   type: 'C' },
   { id: 7,  title: '5-Year Journey',     section: 'intro',   type: 'E' },
   { id: 8,  title: 'The Math',           section: 'intro',   type: 'D' },
-  { id: 9,  title: 'Portfolio Effect',   section: 'intro',   type: 'D' },
-  { id: 10, title: 'The Playbook',       section: 'intro',   type: 'B' },
-  { id: 11, title: 'Key Takeaways',      section: 'closing', type: 'B' },
-  { id: 12, title: 'Thank You',          section: 'closing', type: 'A' },
+  { id: 9,  title: 'The Playbook',       section: 'intro',   type: 'B' },
+  { id: 10, title: 'Key Takeaways',      section: 'closing', type: 'B' },
+  { id: 11, title: 'Closing',            section: 'closing', type: 'A' },
 ];

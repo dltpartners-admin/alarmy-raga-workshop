@@ -59,7 +59,7 @@ export default function Slide03_RealProblem({ isActive }: { isActive: boolean })
         {/* Quote block */}
         <div data-gsap="fade" className="pt-4">
           <p data-gsap="hero" className="text-[clamp(1.3rem,2.2vw,2.2rem)] font-black leading-[1.15] tracking-[-0.01em] text-black whitespace-nowrap">
-            Even if your conversion rate is decent, you&apos;re still leaving the majority on the table.
+            Even if your conversion rate is decent, you&apos;re still <span className="text-primary">leaving the majority on the table.</span>
           </p>
         </div>
       </main>

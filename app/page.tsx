@@ -10,14 +10,13 @@ import Slide05 from '@/components/slides/Slide05_MonetizationDNA';
 import Slide06 from '@/components/slides/Slide06a_UXFear';
 import Slide07 from '@/components/slides/Slide06b_FiveYearJourney';
 import Slide08 from '@/components/slides/Slide07_Math';
-import Slide09 from '@/components/slides/Slide08_PortfolioEffect';
-import Slide10 from '@/components/slides/Slide09_Playbook';
-import Slide11 from '@/components/slides/Slide10_Takeaways';
-import Slide12 from '@/components/slides/Slide11_ThankYou';
+import Slide09 from '@/components/slides/Slide09_Playbook';
+import Slide10 from '@/components/slides/Slide10_Takeaways';
+import Slide11 from '@/components/slides/Slide11_ThankYou';
 
 const slideComponents = [
   Slide01, Slide02, Slide03, Slide04, Slide05, Slide06,
-  Slide07, Slide08, Slide09, Slide10, Slide11, Slide12,
+  Slide07, Slide08, Slide09, Slide10, Slide11,
 ];
 
 function parseHash(): number {

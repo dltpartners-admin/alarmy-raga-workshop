@@ -79,7 +79,7 @@ export default function Slide02_AboutAlarmy({ isActive }: { isActive: boolean })
         {/* Quote block */}
         <div data-gsap="fade" className="pt-4">
           <p data-gsap="hero" className="text-[clamp(1.3rem,2.2vw,2.2rem)] font-black leading-[1.2] tracking-[-0.01em] text-black whitespace-nowrap">
-            How did an alarm app build a business where ads generate 3× more than subscriptions?
+            How did an <span className="text-primary">alarm app</span> build a business where ads generate <span className="text-primary">3×</span> more than subscriptions?
           </p>
         </div>
       </main>
