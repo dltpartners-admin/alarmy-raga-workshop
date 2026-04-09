@@ -5,7 +5,7 @@ import { useCountUp } from '@/hooks/useCountUp';
 export default function Slide07_Math({ isActive }: { isActive: boolean }) {
   const ref = useSlideGsap(isActive);
   const impressions = useCountUp(150, isActive, { decimals: 0 });
-  const monthly = useCountUp(1.05, isActive, { decimals: 2, prefix: '$', suffix: 'M' });
+  const monthly = useCountUp(840, isActive, { decimals: 0, prefix: '$', suffix: 'K' });
 
   return (
     <div ref={ref} className="relative flex h-screen w-screen flex-col overflow-hidden bg-white px-[6vw] py-[4.5vh]">

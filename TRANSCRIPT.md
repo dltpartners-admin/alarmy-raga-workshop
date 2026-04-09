@@ -128,7 +128,7 @@
 >
 > Alarmy shows about **150 impressions per user per day.** I know - that sounds insane. But Alarmy doesn't feel ad-heavy. Internal pacing handles that. The point is: when you have the inventory, even tiny ARPU improvements compound.
 >
-> Watch this. **$0.007 ARPU lift.** Less than a cent. Times **4 million DAU.** That's **over a million dollars a month.** From less than a cent per user.
+> Watch this. **$0.007 ARPU lift.** Less than a cent. Times **4 million DAU.** That's **$840K a month.** From less than a cent per user.
 >
 > A 15% ARPU improvement is a 15% revenue improvement. No new users. No new UA spend. Just better monetization of the users you already have.
 >
