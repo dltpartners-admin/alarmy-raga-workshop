@@ -20,11 +20,11 @@
 
 > So, Alarmy. World's #1 alarm app. 100+ countries, 100 million downloads, been around for over 10 years. About 4 million DAU.
 >
-> Here's the part that usually stops people: **$2.86M monthly revenue. 93% operating margin.**
+> Here's the part that usually stops people: **$2.3M monthly revenue. $1.3M operating profit.**
 >
-> But the number I actually want you to look at is the split. Subscriptions: $710K. That's 25%. Ads: **$2.14 million. 75%.** Three-to-one, ads over subscriptions.
+> But the number I actually want you to look at is the split. Subscriptions: 32.9%. Ads: **67.1%.** Ads earn 2x more than subscriptions.
 >
-> An alarm app. The most commodity category in mobile. Making 3x more from ads than subs.
+> An alarm app. The most commodity category in mobile. Making 2x more from ads than subs.
 >
 > I know what you're thinking - "alarm apps can't charge premium." You're right. They can't. That's actually the whole point of this talk.
 

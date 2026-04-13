@@ -5,11 +5,10 @@ import { useCountUp } from '@/hooks/useCountUp';
 
 export default function Slide02_AboutAlarmy({ isActive }: { isActive: boolean }) {
   const ref = useSlideGsap(isActive);
-  const revenue = useCountUp(2.86, isActive, { decimals: 2, prefix: '$', suffix: 'M' });
-  const margin = useCountUp(93, isActive, { suffix: '%' });
-  const ratio = useCountUp(3, isActive, { suffix: ':1' });
-  const subRev = useCountUp(0.71, isActive, { decimals: 2, prefix: '$', suffix: 'M' });
-  const adRev = useCountUp(2.14, isActive, { decimals: 2, prefix: '$', suffix: 'M' });
+  const revenue = useCountUp(2.3, isActive, { decimals: 1, prefix: '$', suffix: 'M' });
+  const opProfit = useCountUp(1.3, isActive, { decimals: 1, prefix: '$', suffix: 'M' });
+  const adsRatio = useCountUp(67.1, isActive, { decimals: 1, suffix: '%' });
+  const subRatio = useCountUp(32.9, isActive, { decimals: 1, suffix: '%' });
 
   return (
     <div ref={ref} className="relative flex h-screen w-screen flex-col overflow-hidden bg-white px-[6vw] py-[4.5vh]">
@@ -19,12 +18,9 @@ export default function Slide02_AboutAlarmy({ isActive }: { isActive: boolean })
           <Image src="/assets/alarmy.png" alt="Alarmy" width={22} height={22} className="rounded-md" />
           <p className="text-[13px] font-semibold uppercase tracking-[0.22em] text-primary">ABOUT ALARMY</p>
         </div>
-        <div className="flex items-baseline gap-6">
-          <h1 data-gsap="hero" className="text-[clamp(2rem,3.6vw,3.6rem)] font-black leading-[1.05] text-black whitespace-nowrap">
-            The World&apos;s #1 Alarm App
-          </h1>
-          <p className="text-[17px] text-black/50 italic">#1 in 100+ countries · Since 2013</p>
-        </div>
+        <h1 data-gsap="hero" className="text-[clamp(2rem,3.6vw,3.6rem)] font-black leading-[1.05] text-black whitespace-nowrap">
+          The World&apos;s #1 Alarm App
+        </h1>
       </header>
 
       {/* Main */}
@@ -45,41 +41,40 @@ export default function Slide02_AboutAlarmy({ isActive }: { isActive: boolean })
         </div>
 
         {/* Row 2: 3 big financial stats */}
-        <div data-gsap="number" className="grid grid-cols-3 gap-6 border-t border-black/10 pt-5">
+        <div data-gsap="number" className="grid grid-cols-3 gap-6 pt-5">
           <div className="flex flex-col gap-1">
             <span className="text-[clamp(3.5rem,6.5vw,6.5rem)] font-black tabular-nums text-black leading-none">{revenue.formatted}</span>
             <span className="text-[13px] uppercase tracking-[0.18em] text-black/55">Monthly Revenue</span>
           </div>
           <div className="flex flex-col gap-1">
-            <span className="text-[clamp(3.5rem,6.5vw,6.5rem)] font-black tabular-nums text-primary leading-none">{margin.formatted}</span>
-            <span className="text-[13px] uppercase tracking-[0.18em] text-black/55">Operating Margin</span>
+            <span className="text-[clamp(3.5rem,6.5vw,6.5rem)] font-black tabular-nums text-primary leading-none">{opProfit.formatted}</span>
+            <span className="text-[13px] uppercase tracking-[0.18em] text-black/55">Monthly Operating Profit</span>
           </div>
-          <div className="flex flex-col gap-1">
-            <span className="text-[clamp(3.5rem,6.5vw,6.5rem)] font-black tabular-nums text-accent leading-none">{ratio.formatted}</span>
-            <span className="text-[13px] uppercase tracking-[0.18em] text-black/55">Ads : Subscription Revenue</span>
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
+              <span className="text-[clamp(2.2rem,4vw,4rem)] font-black tabular-nums text-primary leading-none">Ads {adsRatio.formatted}</span>
+              <span className="text-[clamp(2.2rem,4vw,4rem)] font-black tabular-nums text-accent leading-none">Sub {subRatio.formatted}</span>
+            </div>
+            <span className="text-[13px] uppercase tracking-[0.18em] text-black/55">Revenue Mix</span>
           </div>
         </div>
 
         {/* Row 3: Revenue bar */}
         <div data-gsap="fade" className="flex flex-col gap-3">
           <div className="flex justify-between text-[13px] font-semibold">
-            <span className="text-accent uppercase tracking-[0.18em]">Subscriptions · {subRev.formatted}</span>
-            <span className="text-primary uppercase tracking-[0.18em]">Ads · {adRev.formatted}</span>
+            <span className="text-accent uppercase tracking-[0.18em]">Subscriptions · 32.9%</span>
+            <span className="text-primary uppercase tracking-[0.18em]">Ads · 67.1%</span>
           </div>
           <div className="flex w-full h-5 rounded-full overflow-hidden">
-            <div className="bg-accent" style={{ width: '25%' }} />
+            <div className="bg-accent" style={{ width: '32.9%' }} />
             <div className="bg-primary flex-1" />
-          </div>
-          <div className="flex justify-between text-sm text-black/40">
-            <span>25% Subscriptions</span>
-            <span>75% Ads</span>
           </div>
         </div>
 
         {/* Quote block */}
         <div data-gsap="fade" className="pt-4">
           <p data-gsap="hero" className="text-[clamp(1.3rem,2.2vw,2.2rem)] font-black leading-[1.2] tracking-[-0.01em] text-black whitespace-nowrap">
-            How did an <span className="text-primary">alarm app</span> build a business where ads generate <span className="text-primary">3×</span> more than subscriptions?
+            How did an <span className="text-primary">alarm app</span> build a business where ads earn <span className="text-primary text-[1.2em]">2×</span> more than subscriptions?
           </p>
         </div>
       </main>
